@@ -4,6 +4,7 @@
   },
   "build": {
     "development": {
+      "node": "18.0.0",
       "distribution": "internal",
       "android": {
         "gradleCommand": ":app:assembleDebug"
@@ -13,11 +14,13 @@
       }
     },
     "preview": {
-      "android": {
-        "buildType": "apk"
-      }
+      "node": "18.0.0",
+      "distribution": "internal",
+      "channel": "preview"
     },
-    "production": {}
+    "production": {
+      "node": "18.0.0"
+    }
   },
   "submit": {
     "production": {}

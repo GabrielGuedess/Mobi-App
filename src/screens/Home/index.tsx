@@ -1,12 +1,23 @@
-import { StatusBar } from 'expo-status-bar';
+import { ScrollView } from 'react-native';
 
-import { Main } from 'components/atoms/Main';
+import { Card } from 'components/molecules/Card';
+import { Header } from 'components/molecules/Header';
 
 import * as S from './styles';
 
 export const Home = () => (
   <S.Wrapper>
-    <StatusBar style="light" translucent />
-    <Main />
+    <Header />
+
+    <ScrollView showsVerticalScrollIndicator={false}>
+      <S.WrapperCards>
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+      </S.WrapperCards>
+    </ScrollView>
   </S.Wrapper>
 );

@@ -1,9 +1,11 @@
 import { useEffect, useState, useCallback } from 'react';
 
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
+import Toast from 'react-native-toast-message';
 
 import * as Font from 'expo-font';
 import * as SplashScreen from 'expo-splash-screen';
+import { StatusBar } from 'expo-status-bar';
 
 import {
   Poppins_300Light as Poppins300Light,
@@ -13,7 +15,10 @@ import {
 
 import { ThemeProvider } from 'styled-components/native';
 
-import { Home } from 'screens/Home';
+import { rgba } from 'polished';
+import { Routes } from 'routes';
+
+import { AuthContextProvider } from 'contexts/AuthContext';
 
 import { theme } from 'styles/theme';
 
@@ -50,9 +55,13 @@ const App = () => {
 
   return (
     <ThemeProvider theme={theme}>
-      <GestureHandlerRootView onLayout={onLayoutRootView} style={{ flex: 1 }}>
-        <Home />
-      </GestureHandlerRootView>
+      <AuthContextProvider>
+        <GestureHandlerRootView onLayout={onLayoutRootView} style={{ flex: 1 }}>
+          <StatusBar style="light" backgroundColor={rgba('#000', 0.3)} />
+          <Routes />
+          <Toast />
+        </GestureHandlerRootView>
+      </AuthContextProvider>
     </ThemeProvider>
   );
 };

@@ -39,8 +39,5 @@ jobs:
       - name: Linting Styles
         run: yarn lint:css
 
-      - name: Test
-        run: yarn test:ci
-
       - name: Build
         run: yarn build

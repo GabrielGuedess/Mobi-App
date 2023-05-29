@@ -1,9 +1,26 @@
 {
   "expo": {
-    "name": "Expo-Boilerplate",
-    "slug": "Expo-Boilerplate",
+    "name": "Mobi-App",
+    "slug": "mobi-app",
     "version": "1.0.0",
     "runtimeVersion": "exposdk:48.0.0",
-    "assetBundlePatterns": ["**/*"]
+    "splash": {
+      "image": "./assets/splash.png",
+      "backgroundColor": "#22222C",
+      "resizeMode": "contain"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "f47f5cce-5c7f-471d-bf96-db9dc4ec002a"
+      }
+    },
+    "updates": {
+      "url": "https://u.expo.dev/f47f5cce-5c7f-471d-bf96-db9dc4ec002a"
+    },
+    "android": {},
+    "ios": {}
   }
 }

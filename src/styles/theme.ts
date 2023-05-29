@@ -3,14 +3,12 @@ export const theme = {
     white: '#FFFFFF',
     black: '#000000',
 
-    gray100: '#E1E1E6',
-    gray200: '#A9A9B2',
-    gray400: '#7C7C8A',
-    gray500: '#505059',
-    gray600: '#323238',
-    gray700: '#29292E',
-    gray800: '#202024',
-    gray900: '#121214',
+    background: '#F1F4FB',
+    gray: '#22222C',
+    yellow: '#FAE800',
+    button: '#353442',
+    checkbox: '#717277',
+    error: '#EF4444',
   },
   fontSizes: {
     xxs: '1rem',
@@ -33,9 +31,9 @@ export const theme = {
     bold: '700',
   },
   fonts: {
-    primaryLight: 'Poppins_300Light',
-    primaryMedium: 'Poppins_500Medium',
-    primarySemiBold: 'Poppins_600SemiBold',
+    primaryLight: 'Poppins300Light',
+    primaryMedium: 'Poppins500Medium',
+    primarySemiBold: 'Poppins600SemiBold',
   },
   lineHeights: {
     shorter: '125%',
