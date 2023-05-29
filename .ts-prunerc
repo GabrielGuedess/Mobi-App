@@ -1,0 +1,3 @@
+{
+  "ignore": "App.tsx|types|.d.ts|jest.config.ts|commitlint.config.ts|plopfile.mjs"
+}

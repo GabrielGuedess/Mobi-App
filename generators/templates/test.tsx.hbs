@@ -1,0 +1,19 @@
+import renderer from 'react-test-renderer';
+
+import { screen } from '@testing-library/react-native';
+
+import { renderWithTheme } from 'utils/tests/helpers';
+
+import { {{pascalCase name}} } from '.';
+
+describe('<{{pascalCase name}} />', () => {
+  it('should render the heading', () => {
+    renderWithTheme(<{{pascalCase name}} />);
+
+    const container = renderer.create(<{{pascalCase name}} />).toJSON();
+
+    expect(screen.getByText(/{{lowerCase name}}/i)).toBeDefined();
+
+    expect(container).toMatchSnapshot();
+  });
+});
